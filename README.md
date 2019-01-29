@@ -1,12 +1,12 @@
 # Swot :apple:
 
-[![Build Status](https://api.travis-ci.org/leereilly/swot.png)](https://travis-ci.org/leereilly/swot) [![Gem Version](https://badge.fury.io/rb/swot.svg)](http://badge.fury.io/rb/swot)
+[![Build Status](https://api.travis-ci.org/leereilly/swot.svg)](https://travis-ci.org/leereilly/swot) [![Gem Version](https://badge.fury.io/rb/swot.svg)](http://badge.fury.io/rb/swot)
 
 If you have a product or service and offer **academic discounts**, there's a good chance there's some manual component to the approval process. Perhaps `.edu` email addresses are automatically approved because, for the most part at least, they're associated with American post-secondary educational institutions. Perhaps `.ac.uk` email addresses are automatically approved because they're guaranteed to belong to British universities and colleges. Unfortunately, not every country has an education-specific TLD (Top Level Domain) and plenty of schools use `.com` or `.net`.
 
 Swot is a community-driven or crowdsourced library for verifying that domain names and email addresses are tied to a legitimate university of college - more specifically, an academic institution providing higher education in tertiary, quaternary or any other kind of post-secondary education in any country in the world.
 
-**Pop quiz:** Which of the following domain names should be eligible for an academic discount? `stanford.edu`, `america.edu`, `duep.edu`, `gla.ac.uk`, `wunizar.es`, `usask.ca`, `hil.no`, `unze.ba`, `fu-berlin.de`, `ecla.de`, `bvb.de`, `lsmu.com`. Answers at the foot of the page.
+**Pop quiz:** Which of the following domain names should be eligible for an academic discount? `stanford.edu`, `america.edu`, `duep.edu`, `gla.ac.uk`, `unizar.es`, `usask.ca`, `hil.no`, `unze.ba`, `fu-berlin.de`, `ecla.de`, `bvb.de`, `lsmu.com`. Answers at the foot of the page.
 
 ### Installation
 
@@ -17,6 +17,10 @@ Swot is a Ruby gem, so you'll need a little Ruby-fu to get it working. Simply
 Or add this to your `Gemfile` before doing a `bundle install`:
 
 `gem 'swot'`
+
+## Requirements
+
+- Ruby >= 2.0
 
 ### Usage
 
@@ -89,7 +93,7 @@ Hopefully, you'll be surprised by some of this:
 | Domain | Academic? | Comments |
 |--------|-----------|----------|
 |`stanford.edu`|:heavy_check_mark:|OK, this was an easy one so you could get at least *one* right|
-|`america.edu`|:heavy_multiplication_x:| Prior to October 29th 2001, anyone could register a `.edu` domain name ([details](http://en.wikipedia.org/wiki/.edu#Grandfathered_uses)) |
+|`america.edu`|:heavy_multiplication_x:| Prior to October 29th 2001, anyone could register a `.edu` domain name ([details](https://en.wikipedia.org/wiki/.edu#Grandfathered_uses)) |
 |`duep.edu`|:heavy_check_mark:| Alfred Nobel University is a *Ukranian* University *in the Ukraine* i.e. not in the USA :us: |
 |`gla.ac.uk`|:heavy_check_mark:|Glasgow University in Scotland|
 |`unizar.es`|:heavy_check_mark:|The University of Zaragoza in Spain|
@@ -107,3 +111,7 @@ If you verified this by visiting all of the websites, how long did it take you? 
 
 * [gman](https://github.com/benbalter/gman) - like swot, but for government emails
 * [swotphp](https://github.com/mdwheele/swotphp) - PHP port of Swot
+* [swot-js](https://github.com/theotow/swot-js) - JS port of Swot
+* [swot-simple](https://github.com/mapbox/swot-simple) - JS port of Swot
+* [swot-clj](https://github.com/ipavl/swot-clj) - Clojure port of Swot
+* [swot](https://github.com/abadojack/swot) - Go port of Swot
